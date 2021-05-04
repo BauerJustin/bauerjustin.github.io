@@ -256,7 +256,7 @@ nav ul li a {
 }
 
 .header-content h1 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ nav ul li a {
 }
 
 .header-content p {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -297,7 +297,7 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #5facdf;
 }
 
 #about .div-img-bg .about-img img {
