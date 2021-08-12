@@ -1,3 +1,3 @@
 # Azure-Website
 
-Personal portfolio website location at https://justinbauerweb.z9.web.core.windows.net/
+Personal portfolio website located at https://justinbauerweb.z9.web.core.windows.net/
