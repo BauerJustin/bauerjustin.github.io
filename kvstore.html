@@ -89,6 +89,20 @@
                     </div>
                      <p class="mb-30">
                       In my Distributed Systems course (ECE419) at UofT, myself and two other students developed a key-value storage system.
+                      The system consists of many components including: an External Coordination Service (ECS), Servers (KVServers), Clients (KVClients), and an Authentication Server (AuthServer).
+                    </p>
+                    <p class="mb-30">
+                      The ECS manages the whole system and deploys a ring of KVServers as seen in the diagram above. The ECS and KVServers communicate between each other using ZooKeeper where metadata and other information is stored.
+                      Data is distributed across the servers using consistent hashing where each server is responsible for an assigned range of the hash ring. Additionally, each server holds two replicas of other servers in the ring.
+                      Data is replicated eagerly when added to the system. When servers are added and removed the ring will redistribute data in an efficient manor. The ECS also employs failure detection to detect server failures where it relaunches a new server in place whenever a failure happens.
+                    </p>
+                    <p class="mb-30">
+                      Prior to connecting to the server ring, KVClients must first authenticate with the AuthServer. The client uses credentials to login/create an account and the AuthServer will provide the client with a token if the credentials are valid.
+                      Once the client has a token it can connect to the server ring where it can get and put data. The servers will ensure the client connecting has a valid token before performing any operations. Data is stored on the servers with the owners token so clients can only get and put data that's theirs.
+                      Whenever, clients connect to a server that's not responsible for the data they send, it will automatically redirect the client to the correct server.
+                    </p>
+                    <p class="mb-30">
+                      The system is robust as it replicates all data preventing data loss and corruption, handles and detects server failures, and employs authentication to protect from malicious users.
                     </p>
                   </div>
                 </div>
