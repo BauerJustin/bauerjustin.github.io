@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('html, body').stop().animate({
       'scrollTop': target.offset().top - 80
     }, 500, 'swing', function() {
-      window.location.hash = target.selector;
+      window.location.hash = target.prop('id');
       $(document).on("scroll", onScroll);
     });
   });
@@ -79,9 +79,9 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Justin Bauer.", "A student.", "A Leader.", "A Developer."],
+      strings: [", I'm Justin Bauer."],
       typeSpeed: 100,
-      loop: true,
+      loop: false,
     });
   });
 
@@ -142,16 +142,16 @@ $(document).ready(function() {
 // ========================================================================= //
 $(window).load(function(){
 
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
+  var experienceIsotope = $('.experience-container').isotope({
+    itemSelector: '.experience-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
+  $('#experience-flters li').on( 'click', function() {
+    $("#experience-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    experienceIsotope.isotope({ filter: $(this).data('filter') });
   });
 
 })

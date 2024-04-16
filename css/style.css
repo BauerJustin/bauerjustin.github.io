@@ -389,24 +389,24 @@ nav ul li a {
 
 
 /*-----------------------------------------------------------------------------------*/
-/*  Portfolio
+/*  experience
 /*-----------------------------------------------------------------------------------*/
 
-#portfolio {
+#experience {
   position: relative;
   padding-bottom: 50px;
 }
 
-#portfolio .portfolio-list {
+#experience .experience-list {
   margin-bottom: 50px;
 }
 
-#portfolio .portfolio-list .nav {
+#experience .experience-list .nav {
   display: inline-block;
   margin: 0;
 }
 
-#portfolio .portfolio-list .nav li {
+#experience .experience-list .nav li {
   margin: 0 40px 0 0;
   float: left;
   font-size: 14px;
@@ -424,7 +424,7 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+#experience .experience-list .nav li:hover, #experience .experience-list .nav li.filter-active  {
   color: #5facdf;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -433,19 +433,19 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-container {
+#experience .experience-container {
   display: inline-block;
   margin-bottom: 50px;
   width: 100%;
 }
 
-.portfolio-thumbnail {
+.experience-thumbnail {
   margin-bottom: 30px;
   overflow: hidden;
   min-height: 260px;
 }
 
-.portfolio-thumbnail img {
+.experience-thumbnail img {
   max-width: 100%;
 }
 
