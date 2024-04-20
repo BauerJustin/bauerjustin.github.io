@@ -49,10 +49,6 @@
     <div class="row">
       <div class="container">
 
-        <!-- <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div> -->
-
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
         <ul class="nav-menu list-unstyled">
@@ -86,18 +82,19 @@
                         <li class="date">technologies: Python, PyTorch</a></li>
                       </ul>
                     </div>
-                    <p class="mb-30">In my Applied Fundamentals of Machine Learning course (APS360) at UofT, I developed neural network models in a group to classify Chest X-ray Images.
-                      We used the <a href="https://www.kaggle.com/nickuzmenkov/nih-chest-xrays-tfrecords">NIH Chest X-rays TFRecords</a> dataset to train two convolutional neural network models using PyTorch.
+                    <p class="mb-30">
+                      In my Applied Fundamentals of Machine Learning course (APS360) at UofT, I collaborated with a group to develop neural network models for classifying Chest X-ray Images. 
+                      Utilizing the <a href="https://www.kaggle.com/nickuzmenkov/nih-chest-xrays-tfrecords">NIH Chest X-rays TFRecords</a> dataset, we trained several convolutional neural network models using PyTorch.
                     </p>
                     <p class="mb-30">
-                      We modified our dataset only to include the three most prominent diseases: Atelectasis, Infiltration, and Effusion, as well as the one third of the No Finding data, to balance our dataset.
-                      The data was stored in TensorFlow format but since our course was on PyTorch we converted the TensorFlow tensors to PyTorch.
+                      To address class imbalance, we curated the dataset to focus on the three most prominent diseases: Atelectasis, Infiltration, and Effusion, while also including one third of the No Finding data. 
+                      This balanced dataset was crucial for our model training. 
+                      Although the original data was stored in TensorFlow format, we seamlessly converted it to PyTorch tensors to align with our course curriculum.
                      </p>
                     <img src="images/nn-arch.png" class="img-responsive" alt="cnn" style="width: 90%">
                      <p class="mb-30">
-                      Our final CNN model is depicted above and it reached a maxium accuracy of 72% on our test dataset. In general, our model was unsuccessful in terms of being used on real patients, however it was a good learning experience 
-                      for learning how to train neural networks on such a large unbalanced dataset.
-                     </p>
+                      Our final CNN model, illustrated above, comprised three convolution layers with max pooling, followed by a fully connected network. Despite our efforts, we encountered challenges in achieving optimal performance, attaining only a 72% accuracy on our test dataset.
+                    </p>
                     <blockquote>
                       <a href="https://github.com/BauerJustin/NIH-Chest-X-rays-Classifier" target="_blank"><i class="ion-social-github" style="font-size: 35px;"> GitHub Project Repository</i></a>
                     </blockquote>

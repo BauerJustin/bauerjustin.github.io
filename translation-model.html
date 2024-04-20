@@ -49,10 +49,6 @@
     <div class="row">
       <div class="container">
 
-        <!-- <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div> -->
-
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
         <ul class="nav-menu list-unstyled">
@@ -87,16 +83,11 @@
                       </ul>
                     </div>
                      <p class="mb-30">
-                      In my Natural Language Computing course (CSC401) at UofT, I trained a French to English Deep Learning model on the Canadian Hansards dataset
-                      following the standard Transformer architecture, outlined in the <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a> paper.
-                      This includes encoder blocks using multi-head attention and feedforward layers, as well as decoder blocks using masked self-attention, cross attention with the encoder outputs, and feedforward layers.
-                      Standard sinusoidal positional encodings were used. Both pre-layer and post-layer normalization blocks were trained and evaluated.
-                      Below is a summary of the model architecture.
+                      In my Natural Language Computing course (CSC401) at UofT, I trained a French to English Deep Learning model on the Canadian Hansards dataset, following the standard Transformer architecture outlined in the "<a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a>" paper. This architecture includes encoder blocks using multi-head attention and feedforward layers, as well as decoder blocks using masked self-attention, cross attention with the encoder outputs, and feedforward layers. Standard sinusoidal positional encodings were utilized, and both pre-layer and post-layer normalization blocks were trained and evaluated. Below is a summary of the model architecture.
                     </p>
                     <img src="images/attention.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
                     <p class="mb-30">
-                      Both greedy and beam search decoding were implemented to translate a source sequence from a target sequence using the trained model. 
-                      Finally, to evaluate translations BLEU score was calculated between sample sequences to measure model performance.
+                      Both greedy and beam search decoding methods were implemented to translate a source sequence into a target sequence using the trained model. Finally, to evaluate translations, the BLEU score was calculated between sample sequences to measure the model's performance.
                     </p>
                   </div>
                 </div>

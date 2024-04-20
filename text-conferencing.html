@@ -51,10 +51,6 @@
     <div class="row">
       <div class="container">
 
-        <!-- <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div> -->
-
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
         <ul class="nav-menu list-unstyled">
@@ -89,36 +85,22 @@
                       </ul>
                     </div>
                     <p class="mb-30">
-                      In my Computer Networks course (ECE361) at UofT, my partner and I developed a text conferencing
-                      application for the linux command line.
-                      There are two main components to our application, the server and the client.
+                      In my Computer Networks course (ECE361) at UofT, my partner and I developed a text conferencing application for the Linux command line. The application consists of two main components: the server and the client.
                     </p>
                     <p class="mb-30">
-                      The server listens for new clients on a chosen port.
-                      Clients can connect to the server by executing a login command with the server address and port
-                      number as well as login credentials.
-                      The server validates these credentials and ensures the clients are known.
-                      Once the clients are connected, the server assigns a thread to each client to process their
-                      request commands, allowing them to interact with sessions and other clients.
+                      The server listens for new clients on a specified port. Clients can connect to the server by executing a login command with the server address, port number, and login credentials. The server validates these credentials and ensures that the clients are recognized. Once connected, the server assigns a thread to each client to process their request commands, enabling interaction with sessions and other clients.
                     </p>
                     <p class="mb-30">
-                      The client allows users to type in commands using the command line to send messages to the server.
-                      This allows them to interact with other clients such as sending messages and creating/joining
-                      sessions.
-                      The client is implemented with two threads. One to take the client input and execute commands.
-                      And the other to listen to the server and process commands given by the server, such as timeouts.
+                      The client allows users to enter commands via the command line to send messages to the server, facilitating interaction with other clients such as sending messages and creating/joining sessions. The client is implemented with two threads: one to handle client input and execute commands, and another to listen to the server and process commands provided by the server, such as timeouts.
                     </p>
                     <p class="mb-30">
-                      Below you can see the iteractions between 3 clients and the server. Notice all 3 clients are on different machines (ug220, ug221, ug222).
+                      Below, you can observe the interactions among three clients and the server. It's worth noting that all three clients are on different machines (ug220, ug221, ug222).
                     </p>
                     <video width=650 controls autoplay muted>
                       <source src="images/text-conferencing.mp4" type="video/mp4">
                     </video>
                     <p class="mb-30">
-                      Additionally, the server implements timeouts and can handle more clients but this was not shown in the demo.
-                    </p>
-                    <p class="mb-30">Unfortunately, the GitHub for this project is private as it is a course assignment.
-                    </p>
+                      Additionally, the server implements timeouts and can handle more clients, although this functionality was not demonstrated in the provided demo.                    </p>
                   </div>
                 </div>
               </div>
