@@ -84,6 +84,9 @@ $(document).ready(function() {
       strings: ["Justin Bauer."],
       typeSpeed: 100,
       loop: false,
+      callback: function() {
+        $(".typed-cursor").css("display", "none"); // Hide the cursor
+      }
     });
   });
 
