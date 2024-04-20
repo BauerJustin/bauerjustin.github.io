@@ -81,7 +81,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: [", I'm Justin Bauer."],
+      strings: ["Justin Bauer."],
       typeSpeed: 100,
       loop: false,
     });
@@ -144,16 +144,16 @@ $(document).ready(function() {
 // ========================================================================= //
 $(window).load(function(){
 
-  var experienceIsotope = $('.experience-container').isotope({
-    itemSelector: '.experience-thumbnail',
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#experience-flters li').on( 'click', function() {
-    $("#experience-flters li").removeClass('filter-active');
+  $('#portfolio-flters li').on( 'click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    experienceIsotope.isotope({ filter: $(this).data('filter') });
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
 })
